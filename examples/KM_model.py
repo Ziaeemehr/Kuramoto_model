@@ -125,4 +125,4 @@ adj = np.asarray([[0, 0, 0],
 if __name__ == "__main__":
 
     main()
-    plot_data("data.npz", plot_cor=True)
+    plot_data("data/data.npz", plot_cor=True)

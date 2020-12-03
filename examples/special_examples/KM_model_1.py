@@ -121,7 +121,8 @@ if __name__ == "__main__":
 
     # case 1 :
     omega_i = 0.1
-    omega_0 = [0, omega_i, omega_i]
+    # omega_0 = [2*omega_i, omega_i, omega_i]
+    omega_0 = [-omega_i, omega_i, 2*omega_i]
     adj = np.asarray([[0, 0, 0],
                       [1, 0, 0],
                       [1, 1, 0]])  # suppose input nodes are on the rows
@@ -132,7 +133,8 @@ if __name__ == "__main__":
 
     # case 2 :
     omega_i = 0.1
-    omega_0 = [omega_i, 0, omega_i]
+    # omega_0 = [omega_i, 2*omega_i, omega_i]
+    omega_0 = [-omega_i, omega_i, 2*omega_i]
     adj = np.asarray([[0, 0, 1],
                       [1, 0, 0],
                       [0, 1, 0]])  # suppose input nodes are on the rows
